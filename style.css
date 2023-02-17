@@ -1,0 +1,157 @@
+html {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body 
+  {
+    padding: 0;
+    margin: 0;
+  }
+  
+  * {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+  }
+  
+  .nav {
+    background-color: #312d59;
+    display: flex;
+  }
+  
+  .navLeft,
+  .navRight {
+    background-color: #ea5454e8;
+    flex: 1;
+  }
+  
+  .navCenter {
+    background-color: #ea5454e8;
+    flex: 4;
+  }
+  
+  .pageA {
+    background-color: #f07b3f;
+  }
+  
+  .title {
+    background-color: #ffd464;
+  }
+  
+  .main {
+    display: flex;
+    background-color: #000;
+  }
+  
+  .section {
+    flex: 2;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #4e4e6a;
+    
+  }
+  
+  .article {
+    flex: 1 1 45%;
+    background-color: #1f6cb0;
+   
+  }
+  
+  .sectionFooter {
+    flex: 1 1 100%;
+    background-color: #70a3c4;
+  }
+  
+  .aside {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #f73f56;
+  }
+  
+  .aside1,
+  .aside2 {
+    background-color: #ffea85;
+  }
+  
+  .aside2 {
+    margin-top: 0;
+  }
+  
+  .footer {
+    background-color: #000;
+  }
+  
+  .pageB {
+    background-color: #e6af2e;
+  }
+  
+  @media (max-width: 1024px) {
+  
+    .main {
+      flex-direction: column;
+      background-color: yellow;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .nav {
+      flex-direction: column;
+    }
+  
+    .navLeft,
+    .navCenter,
+    .navRight {
+      flex: 1;
+    }
+  
+    .main {
+      background-color: #f8e42f;
+    }
+  
+    .section {
+      flex-direction: column;
+      background-color: rgb(27, 100, 122);
+    }
+      
+  
+    .article {
+      flex: 1;
+      background-color: rgb(101, 154, 184);
+    }
+  
+    .sectionFooter {
+      flex: 1;
+      background-color: rgb(171, 231, 171);
+      
+    }
+  
+    .aside {
+      background-color: rgb(247, 118, 59);
+    }
+  
+    .aside1,
+    .aside2 {
+      background-color: rgb(231, 174, 100);
+    }
+  
+    .pageB {
+      background-color: #ebbe60
+    }
+  }
